@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version = '0.1.0'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'ReactiveSwift extensions for Firebase.'
-  s.homepage         = 'https://github.com/edc1591/ReactiveFirebase'
+  s.homepage = 'https://github.com/edc1591/ReactiveFirebase'
   s.authors = { 'Evan Coleman' => 'oss@edc.me' }
   s.source = { :http => 'https://github.com/edc1591/ReactiveFirebase/releases/download/v0.1.0/ReactiveFirebaseFrameworks.zip' }
   
