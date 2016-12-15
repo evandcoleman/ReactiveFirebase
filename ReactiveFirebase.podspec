@@ -19,17 +19,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Auth' do |ss|
-    ss.vendored_frameworks = ["ReactiveFirebaseFrameworks/ReactiveFirebaseAuth/Frameworks/ReactiveFirebaseAuth.framework"]
+    ss.vendored_frameworks = "ReactiveFirebaseFrameworks/ReactiveFirebaseAuth/Frameworks/ReactiveFirebaseAuth.framework"
     ss.dependency 'Firebase/Auth', '3.11.0'
   end
 
   s.subspec 'Database' do |ss|
-    ss.vendored_frameworks = ["ReactiveFirebaseFrameworks/ReactiveFirebaseDatabase/Frameworks/ReactiveFirebaseDatabase.framework"]
+    ss.vendored_frameworks = "ReactiveFirebaseFrameworks/ReactiveFirebaseDatabase/Frameworks/ReactiveFirebaseDatabase.framework"
     ss.dependency 'Firebase/Database', '3.11.0'
   end
 
   s.subspec 'Storage' do |ss|
-    ss.vendored_frameworks = ["ReactiveFirebaseFrameworks/ReactiveFirebaseStorage/Frameworks/ReactiveFirebaseStorage.framework"]
+    ss.vendored_frameworks = "ReactiveFirebaseFrameworks/ReactiveFirebaseStorage/Frameworks/ReactiveFirebaseStorage.framework"
     ss.dependency 'Firebase/Storage', '3.11.0'
   end
 end
