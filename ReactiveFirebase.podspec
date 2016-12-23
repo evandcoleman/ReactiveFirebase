@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/edc1591/ReactiveFirebase'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'Evan Coleman' => 'e@edc.me' }
-  s.source = { :git => 'https://github.com/edc1591/ReactiveFirebase.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/edc1591/ReactiveFirebase.git', :tag => "v#{s.version.to_s}" }
   s.social_media_url = 'https://twitter.com/edc1591'
 
   s.ios.deployment_target = '8.0'
