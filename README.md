@@ -42,6 +42,7 @@ FIRDatabase.database().reference(withPath: "users")
 import ReactiveFirebase
 
 FIRAuth.auth()
+  .reactive
 	.currentUser
 	.startWithValues { user in
 		// do something with your FIRUser
