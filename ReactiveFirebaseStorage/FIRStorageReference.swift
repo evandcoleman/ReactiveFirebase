@@ -6,7 +6,7 @@
 import FirebaseStorage
 import ReactiveSwift
 
-extension FIRStorageReference {
+public extension FIRStorageReference {
     enum DownloadStatus {
         case started(FIRStorageDownloadTask)
         case finished(Data?)
@@ -18,7 +18,7 @@ extension FIRStorageReference {
     }
 }
 
-extension Reactive where Base: FIRStorageReference {
+public extension Reactive where Base: FIRStorageReference {
     
     /// A signal that sends the `downloadURL` for a reference.
     var downloadURL: SignalProducer<URL?, NSError> {

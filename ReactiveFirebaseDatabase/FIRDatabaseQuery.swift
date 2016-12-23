@@ -8,7 +8,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import enum Result.NoError
 
-extension Reactive where Base: FIRDatabaseQuery {
+public extension Reactive where Base: FIRDatabaseQuery {
     
     /// A signal that sends a `Bool` value indicating whether or not a query exists
     var exists: SignalProducer<Bool, NSError> {

@@ -7,7 +7,7 @@ import FirebaseDatabase
 import ReactiveCocoa
 import ReactiveSwift
 
-extension Reactive where Base: FIRDatabaseReference {
+public extension Reactive where Base: FIRDatabaseReference {
     
     /// A signal that sets the value of this reference. Sends the `FIRDatabaseReference`.
     func set(value: Any?) -> SignalProducer<FIRDatabaseReference, NSError> {

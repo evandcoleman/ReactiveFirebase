@@ -8,7 +8,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import enum Result.NoError
 
-extension Reactive where Base: FIRStorageObservableTask {
+public extension Reactive where Base: FIRStorageObservableTask {
     
     func observe(_ status: FIRStorageTaskStatus) -> SignalProducer<FIRStorageTaskSnapshot, NoError> {
         return SignalProducer { observer, disposable in

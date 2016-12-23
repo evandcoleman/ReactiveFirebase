@@ -7,7 +7,7 @@ import FirebaseAuth
 import Foundation
 import ReactiveSwift
 
-extension Reactive where Base: FIRUser {
+public extension Reactive where Base: FIRUser {
     
     /// A signal that sends the user's token.
     var token: SignalProducer<String?, NSError> {

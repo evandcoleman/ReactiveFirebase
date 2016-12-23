@@ -8,7 +8,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import enum Result.NoError
 
-extension Reactive where Base: FIRAuth {
+public extension Reactive where Base: FIRAuth {
     
     /// A signal that observes the currently logged in user. Sends `FIRUser` objects.
     var currentUser: SignalProducer<FIRUser?, NoError> {

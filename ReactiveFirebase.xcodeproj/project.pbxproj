@@ -108,16 +108,19 @@
 		4EB005CBE5C30B0B28F7FF78 /* Pods-ReactiveFirebaseStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseStorage/Pods-ReactiveFirebaseStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		511CB236040F213A39AA9698 /* Pods-ReactiveFirebaseStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseStorage/Pods-ReactiveFirebaseStorage.release.xcconfig"; sourceTree = "<group>"; };
 		5E94F2675AC9E3E6C0332D90 /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
+		7FE92316CC370E4D69BDC740 /* Pods-ReactiveFirebaseExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseExample/Pods-ReactiveFirebaseExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8274D5DECE7998A4350C1107 /* Pods_ReactiveFirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveFirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8515852B992EB63E16353166 /* Pods-ReactiveFirebaseAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseAuth/Pods-ReactiveFirebaseAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		852007D8C6B885AB05749FA5 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A395FFC33CD5EBEFE8AFAF1B /* Pods-Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Database/Pods-Database.debug.xcconfig"; sourceTree = "<group>"; };
 		A778873D171FFFF85AB2EB0F /* Pods-ReactiveFirebaseAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseAuth/Pods-ReactiveFirebaseAuth.release.xcconfig"; sourceTree = "<group>"; };
 		B2DAA06ABBDD18E1D84AC98C /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
+		BA32C77715E870B4FE2DBAD9 /* Pods_ReactiveFirebaseExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveFirebaseExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF431ED92F33A2B42B619466 /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
 		E7A24BAE4D93AA6204D5339F /* Pods-Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database.release.xcconfig"; path = "Pods/Target Support Files/Pods-Database/Pods-Database.release.xcconfig"; sourceTree = "<group>"; };
 		EC6DF168FE96117CC697FB43 /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F80CB779F3E4FED9DF91BC /* Pods_ReactiveFirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveFirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B3AC807AF06E44AFC2745 /* Pods-ReactiveFirebaseExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseExample/Pods-ReactiveFirebaseExample.release.xcconfig"; sourceTree = "<group>"; };
 		FFF10DA00E7077C7D740CC8E /* Pods-ReactiveFirebaseDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseDatabase/Pods-ReactiveFirebaseDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +198,8 @@
 				E7A24BAE4D93AA6204D5339F /* Pods-Database.release.xcconfig */,
 				0E333209AC99FDF1B7463A65 /* Pods-Storage.debug.xcconfig */,
 				5E94F2675AC9E3E6C0332D90 /* Pods-Storage.release.xcconfig */,
+				7FE92316CC370E4D69BDC740 /* Pods-ReactiveFirebaseExample.debug.xcconfig */,
+				FD1B3AC807AF06E44AFC2745 /* Pods-ReactiveFirebaseExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				852007D8C6B885AB05749FA5 /* Pods_Auth.framework */,
 				33162C8BFFFFEF8D316156A5 /* Pods_Database.framework */,
 				EC6DF168FE96117CC697FB43 /* Pods_Storage.framework */,
+				BA32C77715E870B4FE2DBAD9 /* Pods_ReactiveFirebaseExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -463,6 +469,7 @@
 		205A92AC1E0244A6006597AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Evan Coleman";
 				TargetAttributes = {
@@ -513,6 +520,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 205A92AB1E0244A6006597AF;
 			productRefGroup = 205A92B61E0244A6006597AF /* Products */;
@@ -1096,9 +1104,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF431ED92F33A2B42B619466 /* Pods-Auth.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1108,9 +1114,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B2DAA06ABBDD18E1D84AC98C /* Pods-Auth.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1120,9 +1124,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A395FFC33CD5EBEFE8AFAF1B /* Pods-Database.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1132,9 +1134,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7A24BAE4D93AA6204D5339F /* Pods-Database.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1144,9 +1144,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E333209AC99FDF1B7463A65 /* Pods-Storage.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1156,9 +1154,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E94F2675AC9E3E6C0332D90 /* Pods-Storage.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = 52M9C6892K;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
