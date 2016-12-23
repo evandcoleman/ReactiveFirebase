@@ -18,12 +18,6 @@ use_frameworks!
 pod 'ReactiveFirebase'
 ```
 
-To get the full benefits import `ReactiveFirebase` wherever you would import `Firebase`
-
-``` swift
-import ReactiveFirebase
-```
-
 #### Manually
 1. Download and drop all the `.swift` files into your project.  
 2. There is no step two.  
