@@ -8,7 +8,7 @@
 
 `ReactiveFirebase` adds `ReactiveSwift` extensions for several Firebase components. Currently FirebaseAuth, FirebaseDatabase, and FirebaseStorage are supported.
 
-**NOTE: The CocoaPod foes not currently work. Firebase distributes their SDK as a static library which makes distributing this as a CocoaPod very difficult. Your best bet for now is to drop the source files into your Xcode project manually.**
+**NOTE: The CocoaPod does not currently work. Firebase distributes their SDK as a static library which makes distributing this as a CocoaPod very difficult. Your best bet for now is to drop the source files into your Xcode project manually.**
 
 ## Installation
 
