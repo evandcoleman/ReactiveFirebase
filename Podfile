@@ -2,8 +2,8 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-pod 'ReactiveCocoa', '~> 5.0.0.alpha.3'
-pod 'ReactiveSwift', '~> 1.0.0-rc.1'
+pod 'ReactiveCocoa', '5.0.0.alpha.3'
+pod 'ReactiveSwift', '1.0.0.alpha.4'
 
 target 'ReactiveFirebaseAuth' do
   pod 'Firebase/Auth', '~> 3.11.0'

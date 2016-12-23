@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ReactiveFirebase'
-  s.version = '0.1.1'
+  s.version = '0.1.0'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'ReactiveSwift extensions for Firebase.'
   s.homepage = 'https://github.com/edc1591/ReactiveFirebase'
@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.source = { :http => 'https://github.com/edc1591/ReactiveFirebase/releases/download/v0.1.0/ReactiveFirebaseFrameworks.zip' }
   
   s.ios.deployment_target = "8.0"
-  s.dependency 'ReactiveCocoa', '~> 5.0.0.alpha.3'
-  s.dependency 'ReactiveSwift', '~> 1.0.0-rc.1'
+  s.dependency 'ReactiveCocoa', '5.0.0.alpha.3'
+  s.dependency 'ReactiveSwift', '1.0.0.alpha.4'
   s.default_subspecs = 'All'
 
   s.subspec 'All' do |ss|

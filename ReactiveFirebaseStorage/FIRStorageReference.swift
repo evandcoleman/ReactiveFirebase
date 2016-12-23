@@ -6,27 +6,53 @@
 import FirebaseStorage
 import ReactiveSwift
 
+extension FIRStorageReference {
+    enum DownloadStatus {
+        case started(FIRStorageDownloadTask)
+        case finished(Data?)
+    }
+    
+    enum WriteStatus {
+        case started(FIRStorageDownloadTask)
+        case finished(URL?)
+    }
+}
+
 extension Reactive where Base: FIRStorageReference {
-    var downloadURL: SignalProducer<URL, NSError> {
+    
+    /// A signal that sends the `downloadURL` for a reference.
+    var downloadURL: SignalProducer<URL?, NSError> {
         return SignalProducer { observer, disposable in
-            self.base.downloadURL { URL, error in
-                if let error = error {
-                    observer.send(error: error as NSError)
-                } else if let URL = URL {
-                    observer.send(value: URL)
-                    observer.sendCompleted()
+            self.base.downloadURL { url, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
                 } else {
+                    observer.send(value: url)
                     observer.sendCompleted()
                 }
             }
         }
     }
     
-    func put(_ data: Data) -> SignalProducer<Any?, NSError> {
+    var metadata: SignalProducer<FIRStorageMetadata?, NSError> {
         return SignalProducer { observer, disposable in
-            let task = self.base.put(data, metadata: nil) { metadata, error in
-                if let error = error {
-                    observer.send(error: error as NSError)
+            self.base.metadata { metadata, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: metadata)
+                    observer.sendCompleted()
+                }
+            }
+        }
+    }
+    
+    /// A signal that uploads some `Data` to this reference. Sends the file metadata.
+    func put(_ data: Data, metadata: FIRStorageMetadata? = nil) -> SignalProducer<FIRStorageMetadata?, NSError> {
+        return SignalProducer { observer, disposable in
+            let task = self.base.put(data, metadata: metadata) { metadata, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
                 } else {
                     observer.send(value: metadata)
                     observer.sendCompleted()
@@ -35,6 +61,88 @@ extension Reactive where Base: FIRStorageReference {
             
             disposable += ActionDisposable {
                 task.cancel()
+            }
+        }
+    }
+    
+    /// A signal that uploads some `Data` to this reference. Sends the file metadata.
+    func put(file: URL, metadata: FIRStorageMetadata? = nil) -> SignalProducer<FIRStorageMetadata?, NSError> {
+        return SignalProducer { observer, disposable in
+            let task = self.base.putFile(file, metadata: metadata) { metadata, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: metadata)
+                    observer.sendCompleted()
+                }
+            }
+            
+            disposable += ActionDisposable {
+                task.cancel()
+            }
+        }
+    }
+    
+    func data(withMaxSize maxSize: Int64) -> SignalProducer<FIRStorageReference.DownloadStatus, NSError> {
+        return SignalProducer { observer, disposable in
+            let task = self.base.data(withMaxSize: maxSize) { data, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: .finished(data))
+                    observer.sendCompleted()
+                }
+            }
+            
+            observer.send(value: .started(task))
+            
+            disposable += ActionDisposable {
+                task.cancel()
+            }
+        }
+    }
+    
+    func write(toFile url: URL) -> SignalProducer<FIRStorageReference.WriteStatus, NSError> {
+        return SignalProducer { observer, disposable in
+            let task = self.base.write(toFile: url) { url, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: .finished(url))
+                    observer.sendCompleted()
+                }
+            }
+            
+            observer.send(value: .started(task))
+            
+            disposable += ActionDisposable {
+                task.cancel()
+            }
+        }
+    }
+    
+    func update(_ metadata: FIRStorageMetadata) -> SignalProducer<FIRStorageMetadata?, NSError> {
+        return SignalProducer { observer, disposable in
+            self.base.update(metadata) { metadata, error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: metadata)
+                    observer.sendCompleted()
+                }
+            }
+        }
+    }
+    
+    func delete() -> SignalProducer<FIRStorageReference, NSError> {
+        return SignalProducer { observer, disposable in
+            self.base.delete { error in
+                if let error = error as? NSError {
+                    observer.send(error: error)
+                } else {
+                    observer.send(value: self.base)
+                    observer.sendCompleted()
+                }
             }
         }
     }

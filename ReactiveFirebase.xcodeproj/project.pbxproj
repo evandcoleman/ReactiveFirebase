@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C61782D29536F4AAA386E0B /* Pods_ReactiveFirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C19753656E90AF7A403D39C /* Pods_ReactiveFirebaseAuth.framework */; };
+		2002D0971E0CCB82005122AB /* FIRStorageObservableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002D0961E0CCB82005122AB /* FIRStorageObservableTask.swift */; };
 		205A92BA1E0244A6006597AF /* ReactiveFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 205A92B81E0244A6006597AF /* ReactiveFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205A92CA1E0244D9006597AF /* ReactiveFirebaseDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 205A92C81E0244D9006597AF /* ReactiveFirebaseDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205A92CF1E024538006597AF /* FIRDatabaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A92CE1E024538006597AF /* FIRDatabaseReference.swift */; };
@@ -16,6 +17,7 @@
 		205A92E21E02473C006597AF /* FIRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A92E01E02473C006597AF /* FIRUser.swift */; };
 		205A92EC1E02474B006597AF /* ReactiveFirebaseStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 205A92EA1E02474B006597AF /* ReactiveFirebaseStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205A92F11E024754006597AF /* FIRStorageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A92F01E024754006597AF /* FIRStorageReference.swift */; };
+		20A20F5D1E0B27AD006F1629 /* FIRDatabaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A20F5C1E0B27AD006F1629 /* FIRDatabaseQuery.swift */; };
 		2FB826714B063BBB9BEAB2EA /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852007D8C6B885AB05749FA5 /* Pods_Auth.framework */; };
 		3D59FACFD2C54A0DECF90409 /* Pods_ReactiveFirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8274D5DECE7998A4350C1107 /* Pods_ReactiveFirebaseDatabase.framework */; };
 		726D7F8700F011AF6FBF1C63 /* Pods_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33162C8BFFFFEF8D316156A5 /* Pods_Database.framework */; };
@@ -80,6 +82,7 @@
 /* Begin PBXFileReference section */
 		0E333209AC99FDF1B7463A65 /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
 		1C19753656E90AF7A403D39C /* Pods_ReactiveFirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveFirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2002D0961E0CCB82005122AB /* FIRStorageObservableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRStorageObservableTask.swift; sourceTree = "<group>"; };
 		205A92B51E0244A6006597AF /* ReactiveFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A92B81E0244A6006597AF /* ReactiveFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveFirebase.h; sourceTree = "<group>"; };
 		205A92B91E0244A6006597AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		205A93251E02F0AC006597AF /* libAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A93321E02F0B1006597AF /* libDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A933F1E02F0B5006597AF /* libStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A20F5C1E0B27AD006F1629 /* FIRDatabaseQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDatabaseQuery.swift; sourceTree = "<group>"; };
 		33162C8BFFFFEF8D316156A5 /* Pods_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E32F0819C16B8147D6680C6 /* Pods-ReactiveFirebaseDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseDatabase/Pods-ReactiveFirebaseDatabase.release.xcconfig"; sourceTree = "<group>"; };
 		4EB005CBE5C30B0B28F7FF78 /* Pods-ReactiveFirebaseStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveFirebaseStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveFirebaseStorage/Pods-ReactiveFirebaseStorage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				205A92CE1E024538006597AF /* FIRDatabaseReference.swift */,
+				20A20F5C1E0B27AD006F1629 /* FIRDatabaseQuery.swift */,
 				205A92C81E0244D9006597AF /* ReactiveFirebaseDatabase.h */,
 				205A92C91E0244D9006597AF /* Info.plist */,
 			);
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				205A92F01E024754006597AF /* FIRStorageReference.swift */,
+				2002D0961E0CCB82005122AB /* FIRStorageObservableTask.swift */,
 				205A92EA1E02474B006597AF /* ReactiveFirebaseStorage.h */,
 				205A92EB1E02474B006597AF /* Info.plist */,
 			);
@@ -463,6 +469,7 @@
 					205A92B41E0244A6006597AF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 52M9C6892K;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					205A92C51E0244D9006597AF = {
@@ -750,6 +757,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				205A92CF1E024538006597AF /* FIRDatabaseReference.swift in Sources */,
+				20A20F5D1E0B27AD006F1629 /* FIRDatabaseQuery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				205A92F11E024754006597AF /* FIRStorageReference.swift in Sources */,
+				2002D0971E0CCB82005122AB /* FIRStorageObservableTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +925,7 @@
 		205A92BE1E0244A6006597AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 52M9C6892K;
@@ -928,6 +938,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.evancoleman.ReactiveFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -935,6 +946,7 @@
 		205A92BF1E0244A6006597AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 52M9C6892K;
