@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.source = { :http => 'https://github.com/edc1591/ReactiveFirebase/releases/download/v0.1.0/ReactiveFirebaseFrameworks.zip' }
   
   s.ios.deployment_target = "8.0"
-  s.dependency 'ReactiveCocoa', '5.0.0.alpha.3'
-  s.dependency 'ReactiveSwift', '1.0.0.alpha.4'
+  s.dependency 'ReactiveCocoa', '5.0.0.alpha.6'
+  s.dependency 'ReactiveSwift', '1.0.0-rc.3'
   s.default_subspecs = 'All'
 
   s.subspec 'All' do |ss|

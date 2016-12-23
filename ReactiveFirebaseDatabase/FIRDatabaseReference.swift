@@ -13,8 +13,8 @@ extension Reactive where Base: FIRDatabaseReference {
     func set(value: Any?) -> SignalProducer<FIRDatabaseReference, NSError> {
         return SignalProducer { observer, disposable in
             self.base.setValue(value) { error, ref in
-                if let error = error {
-                    observer.send(error: error as NSError)
+                if let error = error as? NSError {
+                    observer.send(error: error)
                 } else {
                     observer.send(value: ref)
                     observer.sendCompleted()
@@ -52,7 +52,7 @@ extension Reactive where Base: FIRDatabaseReference {
     }
     
     /// A signal that updates fields at this reference. Sends the `FIRDatabaseReference`.
-    func update(_ values: [AnyHashable: Any?]) -> SignalProducer<FIRDatabaseReference, NSError> {
+    func update(_ values: [AnyHashable: Any]) -> SignalProducer<FIRDatabaseReference, NSError> {
         return SignalProducer { observer, disposable in
             self.base.updateChildValues(values) { error, ref in
                 if let error = error as? NSError {
@@ -147,7 +147,7 @@ extension Reactive where Base: FIRDatabaseReference {
     }
     
     /// A signal that updates the child values at this reference on disconnect. Sends this reference once the event has been queued up.
-    func onDisconnectUpdate(_ values: [AnyHashable: Any?]) -> SignalProducer<FIRDatabaseReference, NSError> {
+    func onDisconnectUpdate(_ values: [AnyHashable: Any]) -> SignalProducer<FIRDatabaseReference, NSError> {
         return SignalProducer { observer, disposable in
             self.base.onDisconnectUpdateChildValues(values) { error, ref in
                 if let error = error as? NSError {
